@@ -1,0 +1,3 @@
+    persist(){
+        localStorage.setItem("CoffeOrder", JSON.stringify(this));
+    }

@@ -1,0 +1,13 @@
+  renderLog(coffeType, price) {
+    this.logDiv.innerHTML = `<p>You have ordered ${coffeType}(s) that cost(s) ${price} kunas.</p>`;
+  }
+
+  renderImg(coffeType) {
+
+    let imgSrc = `./media/${coffeType}.png`;
+    let elem = document.createElement("img");
+    elem.setAttribute("src", imgSrc);
+
+    
+    document.getElementById("div-coffee-image").replaceChildren(elem);
+  }
